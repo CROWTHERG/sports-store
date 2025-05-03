@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Strike Zone</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-group">
+      <img src="assets/images/logo.png" alt="Logo" class="logo" />
+      <span class="wordmark">Strike Zone</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-button">
+      <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </header>
+
+ <!-- Hero Section -->
+<section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="assets/videos/hero-animation.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay">
+      <div class="hero-text" data-aos="fade-left">
+        <h1>Unleash Your Game</h1>
+        <p>Elite Gear. Unmatched Style.</p>
+        <a href="#store" class="cta-button" data-aos="slide-up" data-aos-delay="300">Shop Now</a>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Product Teaser -->
+  <section class="teaser" data-aos="fade-up">
+    <h2>Why Choose Strike Zone?</h2>
+    <p>Crafted for athletes, designed for dominance. Step into elite performance gear today.</p>
+  </section>
+
+  <!-- Store Section -->
+  <section id="store" class="store-section" data-aos="fade-right">
+    <h2>Our Top Picks</h2>
+    <div class="store-grid">
+      <div class="product-card">
+        <img src="assets/images/shoes.jpg" alt="Product 1" />
+        <h3>SpeedX Cleats</h3>
+        <p>$129.99</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/images/gloves.jpg" alt="Product 2" />
+        <h3>Pro Gloves</h3>
+        <p>$59.99</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/images/jersey.jpg" alt="Product 3" />
+        <h3>Team Jersey</h3>
+        <p>$89.99</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <div class="footer-content">
+      <p>&copy; 2025 Strike Zone. CODE by CROWTHER.</p>
+      <a href="https://crowther-webdev.netlify.com">My Portfolio</a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: false, duration: 1000, easing: 'ease-in-out' });
+  </script>
+</body>
+</html>
