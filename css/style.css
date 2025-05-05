@@ -248,6 +248,14 @@ ul {
     padding: 1rem;
   }
 
+  .hero {
+    height: 100dvh; /* Use dynamic viewport height */
+  }
+
+  .hero-video {
+    object-position: center top; /* Or another value that fits your video best */
+  }
+
   .nav-links.active {
     display: flex;
   }
